@@ -11,6 +11,7 @@
   <modules>
     <module>provider-user</module>
     <module>consumer-order</module>
+    <module>eureka</module>
   </modules>
   <!-- 将当前项目声明为 springboot 项目 -->
   <parent>
@@ -27,6 +28,18 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Finchley.M9</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>

@@ -1,0 +1,16 @@
+server:
+  port: 8888
+# 单机 eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://user:123@localhost:10000/eureka
+    # 开启安全配置
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: 123
