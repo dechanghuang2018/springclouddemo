@@ -1,0 +1,7 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: consumer-order
+user:
+  url: http://localhost:7900/user/

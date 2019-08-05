@@ -1,0 +1,6 @@
+server:
+  port: 7900 # 程序启动后的端口
+
+spring:
+  application:
+    name: provider-user # 应用名称 别名
