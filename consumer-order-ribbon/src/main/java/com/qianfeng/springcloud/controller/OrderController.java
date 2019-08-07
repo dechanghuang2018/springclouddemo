@@ -30,9 +30,9 @@ public class OrderController {
     @GetMapping("/order/{id}")
     public User getOrder(@PathVariable Long id){
         // 访问提供者获取数据
-        InstanceInfo instance = eurekaClient.getNextServerFromEureka("PROVIDER-USER", false);
-        String homePageUrl =  instance.getHomePageUrl();
-        User user = restTemplate.getForObject(homePageUrl + "/user/" + id, User.class);
+//        InstanceInfo instance = eurekaClient.getNextServerFromEureka("PROVIDER-USER", false);
+//        String homePageUrl =  instance.getHomePageUrl();
+        User user = restTemplate.getForObject("http://PROVIDER-USER/user/" + id, User.class);
         return user;
     }
 }

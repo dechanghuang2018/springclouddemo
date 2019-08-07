@@ -12,6 +12,7 @@
     <module>provider-user</module>
     <module>consumer-order</module>
     <module>eureka</module>
+    <module>consumer-order-ribbon</module>
   </modules>
   <!-- 将当前项目声明为 springboot 项目 -->
   <parent>

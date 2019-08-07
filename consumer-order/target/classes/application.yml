@@ -5,3 +5,8 @@ spring:
     name: consumer-order
 user:
   url: http://localhost:7900/user/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@localhost:8888/eureka

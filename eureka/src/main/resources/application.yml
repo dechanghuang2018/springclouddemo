@@ -6,7 +6,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://user:123@localhost:10000/eureka
+      defaultZone: http://user:123@localhost:8888/eureka
     # 开启安全配置
 security:
   basic:
