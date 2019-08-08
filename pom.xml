@@ -13,6 +13,9 @@
     <module>consumer-order</module>
     <module>eureka</module>
     <module>consumer-order-ribbon</module>
+    <module>consumer-order-ribbon-config</module>
+    <module>consumer-order-ribbon-config-properties</module>
+    <module>erueka-ha</module>
   </modules>
   <!-- 将当前项目声明为 springboot 项目 -->
   <parent>

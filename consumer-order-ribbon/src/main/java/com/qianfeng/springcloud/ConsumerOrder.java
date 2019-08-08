@@ -1,5 +1,6 @@
-package com.qianfeng;
+package com.qianfeng.springcloud;
 
+import com.qianfeng.TestConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -13,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableEurekaClient  // 启用客户端
-@RibbonClient("PROVIDER-USER")  // 启用 ribbon ，并对进行 PROVIDER-USER负载均衡
+@RibbonClient(name = "PROVIDER-USER", configuration = TestConfig.class)  // 启用 ribbon ，并对进行 PROVIDER-USER负载均衡
 public class ConsumerOrder {
     @Bean
     public RestTemplate getTemp(){

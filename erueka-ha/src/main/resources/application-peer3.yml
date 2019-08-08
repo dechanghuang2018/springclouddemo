@@ -1,0 +1,22 @@
+server:
+  port: 8763
+
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@peer1:8761/eureka/,http://user:123@peer2:8762/eureka/
+spring:
+  application:
+    name: EUREKA-HA
+  profiles:
+    active: peer3
+
+    # 开启安全配置
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: 123
