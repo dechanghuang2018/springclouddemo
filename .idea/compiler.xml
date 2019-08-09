@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer-order" />
+        <module name="consumer-order-feign (1)" />
         <module name="consumer-order-ribbon" />
         <module name="consumer-order-ribbon-config" />
         <module name="consumer-order-ribbon-config-properties" />
         <module name="consumerorder" />
+        <module name="consumerorderfeigncustom" />
         <module name="eruekaha" />
         <module name="eureka" />
         <module name="provider-user" />
@@ -18,6 +20,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumer-order-feign" target="1.7" />
+      <module name="consumer-order-feign (1)" target="1.7" />
       <module name="consumer-order-ribbon - config" target="1.7" />
       <module name="eureka (1)" target="1.7" />
       <module name="eureka-ha" target="1.7" />

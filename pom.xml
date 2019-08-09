@@ -16,6 +16,8 @@
     <module>consumer-order-ribbon-config</module>
     <module>consumer-order-ribbon-config-properties</module>
     <module>erueka-ha</module>
+    <module>consumer-order-feign</module>
+    <module>consumer-order-feign-custom</module>
   </modules>
   <!-- 将当前项目声明为 springboot 项目 -->
   <parent>

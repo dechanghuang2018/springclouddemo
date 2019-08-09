@@ -1,0 +1,12 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: consumer-order-feign-custom
+user:
+  url: http://localhost:7900/user/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@localhost:8888/eureka
